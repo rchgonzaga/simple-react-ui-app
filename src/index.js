@@ -26,7 +26,7 @@ const App = () => (
     <Menu fixed="top" inverted>
       <Container>
         <Menu.Item as="a" header>
-          <Image size="mini" src="/logo.png" style={{ marginRight: "1.5em" }} />
+          @
           Project Name
         </Menu.Item>
         <Menu.Item as="a">Home</Menu.Item>
@@ -50,13 +50,11 @@ const App = () => (
         </Dropdown>
       </Container>
     </Menu>
-
-    <Container text style={{ marginTop: "7em" }}>
-      <Header as="h1">Semantic UI React Fixed Template</Header>
+    <Container>
       <SideBar />
     </Container>
 
-    <Segment inverted vertical style={{ margin: "5em 0em 0em" }}>
+    <Segment inverted vertical style={{ margin: "1em 0em 0em" }}>
       This is a footer
     </Segment>
   </div>
