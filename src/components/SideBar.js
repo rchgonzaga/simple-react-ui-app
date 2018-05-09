@@ -18,6 +18,9 @@ class SideBar extends Component {
     const { visible } = this.state;
     return (
       <div>
+        <br />
+        <br />
+        <br />
         <Button onClick={this.toggleVisibility}>Toggle Visibility</Button>
         <Sidebar.Pushable as={Segment}>
           <Sidebar
