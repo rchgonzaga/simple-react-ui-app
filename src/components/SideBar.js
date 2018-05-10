@@ -13,6 +13,7 @@ class SideBar extends Component {
   state = { visible: false };
 
   toggleVisibility = () => this.setState({ visible: !this.state.visible });
+  youveClicked = () => alert('aaa')
 
   render() {
     const { visible } = this.state;
@@ -22,7 +23,7 @@ class SideBar extends Component {
         <br />
         <br />
         <Button onClick={this.toggleVisibility}>Toggle Visibility</Button>
-        <Sidebar.Pushable as={Segment}>
+        <Sidebar.Pushable style={{width: "100%", height: "400px"}}>
           <Sidebar
             as={Menu}
             animation="overlay"
@@ -32,16 +33,13 @@ class SideBar extends Component {
             vertical
             inverted
           >
-            <Menu.Item name="home">
-              <Icon name="home" />
+            <Menu.Item name="home" onClick={this.youveClicked}>
               Home
             </Menu.Item>
             <Menu.Item name="gamepad">
-              <Icon name="gamepad" />
               Games
             </Menu.Item>
             <Menu.Item name="camera">
-              <Icon name="camera" />
               Channels
             </Menu.Item>
           </Sidebar>
